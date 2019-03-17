@@ -36,7 +36,7 @@ cd /home/ec2-user/test_repository/.zprezto/runcoms/
 for f in *; do
     [ "$f" = "README.md" ] && continue
 
-    ln -s "$f" /home/ec2-user/."$f"
+    ln -sf "/home/ec2-user/test_repository/.zprezto/runcoms/$f" ~/."$f"
 done
 
 cat << END
